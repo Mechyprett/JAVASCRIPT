@@ -99,18 +99,67 @@ console.log(typeof x);
 /************************************/
 //OPERATOR PRECEDENCE
 /************************************/
-
+/*
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
 
+//Multiple operators
+var isFullAge = now - yearJohn >= fullAge; //true
+console.log(isFullAge);
+
+
+//Grouping
+var ageJohn = now - yearJohn;
+ var ageMark = 35;
+ var average = (ageJohn + ageMark) /2;
+ console.log(average);
+
+//Multiple assignmets
+var x, y;
+x= y =(3 +5) * 4 - 6;// 8 * 4 - 6 // 32 -6 // 26
+
+console.log(x,y);
+
+*/
+//More operators
+/*
+//x = x *2;
+x *=2; //Es igual a numero de arriba
+console.log(x);
+
+x+= 10;
+console.log(x);
+//x = x += 1;
+//x +=1;
+/*
+x++;
+console.log(x);
+*/
+/*
+x--;
+console.log(x);
+/************************************************************8
+ CODING CHANLLENGE 1
+ */
+/*
+Mark and John are trying to compare their BMI (body mass Index),
+which is calculated using thr formula
+BMI = mass / height ^2 = mass / (height * height).
+(mass in kg and height in meter).
+
+
+1. Store Mark's and John's mass and height in variables.
+2. Calculate both their  BMIs.
+3.Create a boolean variable container information
+about whether Mark has a higher BMI than John.
+4.Print a string to the console contraining the variable
+from step 3. (Something like "Is Mark's BMI higher than john's true").
 
 
 
-
-
-
-
+ */
+//SOLUTION
 /*
 
 var massMark = 78; //kg
