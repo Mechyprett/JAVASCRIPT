@@ -266,9 +266,10 @@ if (age >= 18){
 
 //Switch  Statement
 
-var job = 'teacher';
+var job = 'cop';
 switch (job) {
     case 'teacher':
+    case 'instructor':
         console.log(firstName + ' teaches kids how to code.');
         break;
     case 'driver':
@@ -278,5 +279,24 @@ switch (job) {
         console.log(' desings beutiful websites');
         break;
     default:
-        console.log(firstName + ' does something else. ')
+        console.log(firstName + ' does something else. ');
+}
+
+age= 22;
+
+switch (true){
+    case age < 13:
+        console.log(firstName + ' is a boy');
+        break;
+
+    case age >= 13 && age <20:
+        console.log(firstName + ' is a teenager');
+        break;
+    case age >= 20 && age <30:
+        console.log(firstName + ' is a young man');
+        break;
+    default:
+        console.log(firstName + ' is a  man');
+
+
 }
