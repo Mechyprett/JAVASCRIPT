@@ -224,17 +224,59 @@ if (BMIMark > BMIJohn) {
 /***************************************************/
 //  BOOLEAN LOGIC
  /*************************************************/
-
 /*
-var firstName ='John';
-var age = 16;
 
-if(age <13){
+var firstName ='John';
+var age = 20;
+
+if(age < 13){
     console.log(firstName + ' is a boy');
-}else if(){ //between 13 and 20 === age >= 13 AND age < 20
+}else if(age >= 13 && age < 20){ //between 13 and 20 === age >= 13 AND age < 20
+
     console.log(firstName + ' is a teenager');
+} else if(age > 20 && age < 30 ){
+    console.log(firstName + ' is a young man');
 }
 else {
     console.log(firstName + ' is a man');
 }
 */
+/**************************************************
+ * THE TERNARY OPERATOR AND SWITCH STATEMENT
+ */
+
+var firstName ='John';
+var age = 16;
+
+//Ternary operator
+age >= 18 ? console.log(firstName +' drink beer. ')
+    :console.log(firstName +' drinks juice. ');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+/*
+if (age >= 18){
+   var drink = 'beer';
+} else {
+    var drink = 'juice';
+}
+
+ */
+
+//Switch  Statement
+
+var job = 'teacher';
+switch (job) {
+    case 'teacher':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives an Uber in Lisbon.');
+        break;
+    case 'desing':
+        console.log(' desings beutiful websites');
+        break;
+    default:
+        console.log(firstName + ' does something else. ')
+}
