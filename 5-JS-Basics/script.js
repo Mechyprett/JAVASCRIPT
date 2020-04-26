@@ -141,7 +141,7 @@ console.log(rates);
 /////////////////////////////
 // Lecture: Functions returning functions
 
-
+/*
 function interviewQuestion(job){
 
     if(job === 'designer'){
@@ -174,12 +174,28 @@ designerQuestion('Maria');
 interviewQuestion('teacher')('Mark');
 
 
+ */
+/////////////////////////////
+// Lecture: IIFE
+/*
+function  game(){
+    var score = Math.random() * 10;
+    console.log(score >=5);
+}
+game();
+*/
+
+(function () {
+        var score = Math.random() * 10;
+        console.log(score >=5);
+    })();
+
+//console.log(score);
 
 
-
-
-
-
-
+(function (gooLuck) {
+    var score = Math.random() * 10;
+    console.log(score >= 5 - gooLuck);
+})(5);
 
 
